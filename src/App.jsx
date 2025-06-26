@@ -20,20 +20,7 @@ function App() {
           <h2>Time to get started!</h2>
           <ul>
             {/*outputting the list dynamically*/}
-            {/* {CORE_CONCEPTS.map((conceptItem) => <CoreConcepts key={conceptItem.title} {...conceptItem}/>)} */}
-
-            {/*OR*/}
-            <CoreConcepts
-              title={CORE_CONCEPTS[0].title}
-              description={CORE_CONCEPTS[0].description}
-              image={CORE_CONCEPTS[0].image}
-            />
-            <CoreConcepts {...CORE_CONCEPTS[1]} />
-            {/*built-in javascript spread operator*/}
-            <CoreConcepts {...CORE_CONCEPTS[2]} />
-            {/*built-in javascript spread operator*/}
-            <CoreConcepts {...CORE_CONCEPTS[3]} />
-            {/*built-in javascript spread operator*/}
+            {CORE_CONCEPTS.map((conceptItem) => <CoreConcepts key={conceptItem.title} {...conceptItem}/>)} 
           </ul>
         </section>
 
